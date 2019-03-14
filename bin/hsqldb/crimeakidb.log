@@ -1,0 +1,17 @@
+/*C26*/SET SCHEMA PUBLIC
+drop table ocorrencias
+/*C27*/SET SCHEMA PUBLIC
+CREATE TABLE IF NOT EXISTS OCORRENCIAS ( id SMALLINT IDENTITY PRIMARY KEY, data DATE, lat VARCHAR(55), lon VARCHAR(55), rua VARCHAR(55), bairro VARCHAR(35), cidade VARCHAR(35), estado VARCHAR(35), cep VARCHAR(25), infracao VARCHAR(255), data_infracao DATE, hora_infracao TIME, autor VARCHAR(55), autor_sexo VARCHAR(25), autor_idade INTEGER, autor_cor VARCHAR(25), outros_autores VARCHAR(255), quantidade_autores INTEGER, vitima VARCHAR(55), vitima_sexo VARCHAR(55), vitima_idade INTEGER, vitima_cor VARCHAR(25), outras_vitimas VARCHAR(255), quantidade_vitimas INTEGER, historico VARCHAR(255), autoridade VARCHAR(55), autoridade_identificacao VARCHAR(55), outras_autoridades VARCHAR(255) )
+INSERT INTO OCORRENCIAS VALUES(0,'2019-03-12','-20.4636763','-54.6226829','Rua Bar\u00e3o do Rio Branco 590',' Amamba\u00ed','Campo Grande','Mato Grosso do Sul',' 79008-361','',NULL,NULL,'',NULL,NULL,NULL,NULL,0,'',NULL,NULL,NULL,NULL,0,'',NULL,NULL,NULL)
+COMMIT
+INSERT INTO OCORRENCIAS VALUES(1,'2019-03-11','-23.535615999999997','-46.725529599999994','Rua Professor Paulo Tavares 155',' Vila Leopoldina','S\u00e3o Paulo','S\u00e3o Paulo',' 05305-031','',NULL,NULL,'\u00e1\u00e9\u00ed\u00f3\u00fa\u00e3\u00ea\u00e9\u00e8\u00ed\u00ec\u00f5\u00f4\u00f3\u00f2\u00fa\u00f9\u00c3',NULL,NULL,NULL,NULL,0,'',NULL,NULL,NULL,NULL,0,'',NULL,NULL,NULL)
+COMMIT
+INSERT INTO OCORRENCIAS VALUES(2,'2019-03-11','-23.535615999999997','-46.725529599999994','Rua Professor Paulo Tavares 155',' Vila Leopoldina','S\u00e3o Paulo','S\u00e3o Paulo',' 05305-031','',NULL,NULL,'',NULL,NULL,NULL,NULL,0,'',NULL,NULL,NULL,NULL,0,'',NULL,NULL,NULL)
+COMMIT
+DISCONNECT
+/*C28*/SET SCHEMA PUBLIC
+CREATE TABLE IF NOT EXISTS OCORRENCIAS ( id SMALLINT IDENTITY PRIMARY KEY, data DATE, lat VARCHAR(55), lon VARCHAR(55), rua VARCHAR(55), bairro VARCHAR(35), cidade VARCHAR(35), estado VARCHAR(35), cep VARCHAR(25), infracao VARCHAR(255), data_infracao DATE, hora_infracao TIME, autor VARCHAR(55), autor_sexo VARCHAR(25), autor_idade INTEGER, autor_cor VARCHAR(25), outros_autores VARCHAR(255), quantidade_autores INTEGER, vitima VARCHAR(55), vitima_sexo VARCHAR(55), vitima_idade INTEGER, vitima_cor VARCHAR(25), outras_vitimas VARCHAR(255), quantidade_vitimas INTEGER, historico VARCHAR(255), autoridade VARCHAR(55), autoridade_identificacao VARCHAR(55), outras_autoridades VARCHAR(255) )
+INSERT INTO OCORRENCIAS VALUES(3,'2019-03-12','-23.524147199999998','-46.5788928','Avenida Marginal Tiet\u00ea 4833',' Vila Maria','S\u00e3o Paulo','S\u00e3o Paulo',' 02167-080','',NULL,NULL,'',NULL,NULL,NULL,NULL,0,'',NULL,NULL,NULL,NULL,0,'',NULL,NULL,NULL)
+COMMIT
+DISCONNECT
+/*C26*/DISCONNECT
